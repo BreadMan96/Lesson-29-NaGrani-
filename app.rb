@@ -5,7 +5,7 @@ require 'sinatra/activerecord'
 
 set :database, "sqlite3:nagrani.db"
 
-class Client < ActiveRecord::Base
+class Actors < ActiveRecord::Base
 end
 
 get '/' do

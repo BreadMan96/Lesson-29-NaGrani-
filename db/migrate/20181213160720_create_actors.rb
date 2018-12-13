@@ -5,10 +5,10 @@ class CreateActors < ActiveRecord::Migration[5.2]
 		t.text :name
 		t.text :phone
 		t.text :city
-		t.tetxt :role
+		t.text :role
 		
 		t.timestamps 
 	end
   end
-  
+
 end
