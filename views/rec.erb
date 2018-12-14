@@ -1,0 +1,50 @@
+<script type="text/javascript">
+$(function(){
+
+
+}); 
+</script>
+
+<h2><b> Тут можно подать заявку на участие в проекте. </b></h2>
+<br/>
+
+<form action="/rec" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">ФИО: </label>
+    <input type="text" required name="actor_name" class="form-control" placeholder="Например: Касаткина Марина Сергеевна"/>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Ваш возраст: </label>
+    <input type="text" required name="actor_age" class="form-control" placeholder="Нужно ввести только цифру"/>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Ваш номер телефона: </label>
+    <input type="text" required name="actor_phone" class="form-control" placeholder="Например: +7(927)455-65-48"/>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Из какого Вы города: </label>
+    <input type="text" required name="actor_city" class="form-control" placeholder="Например: г.Санкт-Петербург "/>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Ссылка на Ваш Instagram или VK: </label>
+    <input type="text" required name="actor_link" class="form-control" placeholder="Например: https://www.instagram.com/kimkardashian "/>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Выберите историю, в которой хотите участвовать: </label>
+    <select class="form-control" name="actor_story"/>
+      <option>Зомби-Апокалипсис</option>
+      <option>Похищение маньяком</option>
+      <option>В открытом море</option>
+      <option>Необитаемый остров</option>
+      <option>Голливудская звезда</option>
+    </select>
+    <small id="emailHelp" class="form-text text-muted">Описание всех историй можно посмотреть <a href="/story" class="alert-link"> по этой ссылке </a></small>
+  </div>
+
+  <input class="btn btn-primary" type="submit" value="Подать заявку"/>
+</form>

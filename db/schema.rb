@@ -14,8 +14,10 @@ ActiveRecord::Schema.define(version: 2018_12_14_084029) do
 
   create_table "actors", force: :cascade do |t|
     t.text "name"
+    t.text "age"
     t.text "phone"
     t.text "city"
+    t.text "link"
     t.text "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
