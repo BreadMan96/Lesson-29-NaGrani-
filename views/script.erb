@@ -1,0 +1,26 @@
+<h2> Есть идея для игровой истории? Стань сценаристом нашего проекта! </h2>
+<h4> <samp> Кратко опиши концепт своей идеи, мы обязательно прочтём её, и свяжемся с тобой. </samp></h4>
+<br/>
+
+
+<form action="/script" method="POST">
+  <div class="form-group">
+    <label for="exampleFormControlInput1"> Ваш Email-address: </label>
+    <input type="email" name="script_email" class="form-control" value="<%= @comments_email %>" placeholder="name@gmail.com">
+    <small id="emailHelp" class="form-text text-muted">Будет доступен лишь администраторам сайта!</small>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Введите ваше имя: </label>
+    <input type="text" required name="script_name" class="form-control" placeholder="Мария Касаткина"/>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Опишите свою идею: </label>
+    <textarea class="form-control" name="script_text" rows="3"></textarea> 
+  </div>
+
+  <input class="btn btn-primary" type="submit" value="Отправить">
+  
+</form>
+

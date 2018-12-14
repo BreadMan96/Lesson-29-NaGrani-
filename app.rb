@@ -13,6 +13,7 @@ end
 
 get '/' do
 	@curators = Curators.all 
+	@actors = Actors.all
 	erb :index			
 end
 
@@ -40,6 +41,6 @@ get '/story' do
 	erb "Story"			
 end
 
-get '/noname' do
-	erb "No Name"			
+get '/script' do
+	erb :script			
 end
