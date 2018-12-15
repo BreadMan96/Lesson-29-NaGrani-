@@ -6,7 +6,7 @@
 <form action="/script" method="POST">
   <div class="form-group">
     <label for="exampleFormControlInput1"> Ваш Email-address: </label>
-    <input type="email" name="script_email" class="form-control" value="<%= @comments_email %>" placeholder="name@gmail.com">
+    <input type="email" required name="script_email" class="form-control" value="<%= @comments_email %>" placeholder="name@gmail.com">
     <small id="emailHelp" class="form-text text-muted">Будет доступен лишь администраторам сайта!</small>
   </div>
 
@@ -17,7 +17,7 @@
 
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Опишите свою идею: </label>
-    <textarea class="form-control" name="script_content" rows="3"></textarea> 
+    <textarea class="form-control" required name="script_content" rows="3"></textarea> 
   </div>
 
   <input class="btn btn-primary" type="submit" value="Отправить">
