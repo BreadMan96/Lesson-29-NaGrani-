@@ -11,6 +11,9 @@ end
 class Curators < ActiveRecord::Base
 end
 
+class Scripts < ActiveRecord::Base
+end
+
 get '/' do
 	@curators = Curators.all 
 	@actors = Actors.all
@@ -39,6 +42,19 @@ end
 
 get '/story' do
 	erb "Story"			
+end
+
+post '/script' do
+	@script_email = params[:script_email]
+	@script_name = params[:script_name]
+	@script_content = params[:script_content]
+
+	Scripts.create :email => @script_email, :name => @script_name, :content => @script_content
+	
+	@title = "Ваша идея успешно отправлена!"
+	@message = "Мы обязательно прочтём её, и если она нам понравится, мы свяжемся с Вами!"
+
+	erb :message
 end
 
 get '/script' do
