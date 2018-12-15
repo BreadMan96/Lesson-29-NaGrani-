@@ -1,0 +1,28 @@
+<h3 class="alert alert-primary"> Полный список девушек, подавших заявки: </h3>
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">ФИО</th>
+      <th scope="col">Возраст</th>
+      <th scope="col">Телефон</th>
+      <th scope="col">Город</th>
+      <th scope="col">Ссылка</th>
+      <th scope="col">История</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<% @actors.each do |actor| %>
+	    <tr>
+	      <th scope="row"> <%= actor.id %> </th>
+	      <td> <%= actor.name %> </td>
+	      <td> <%= actor.age %> </td>
+	      <td> <%= actor.phone %> </td>
+	      <td> <%= actor.city %> </td>
+		  <td> <a href="<%= actor.link %>" class="alert-link"> <%= actor.link %> </a> </td>
+		  <td> <%= actor.role %> </td>
+	    </tr>
+	<% end %>
+  </tbody>
+</table>

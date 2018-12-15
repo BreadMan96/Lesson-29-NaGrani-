@@ -44,3 +44,18 @@ end
 get '/script' do
 	erb :script			
 end
+
+get '/all' do
+	@actors = Actors.all
+	erb :all			
+end
+
+get '/success' do
+	@actors = Actors.all
+	erb :success			
+end
+
+get '/denied' do
+	@actors = Actors.all
+	erb :denied		
+end
