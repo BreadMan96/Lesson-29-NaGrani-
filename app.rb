@@ -70,3 +70,7 @@ end
 get '/denied' do
 	erb :denied		
 end
+
+get '/admin_all_test' do
+	erb :admin_all_test	
+end

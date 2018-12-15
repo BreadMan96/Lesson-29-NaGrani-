@@ -1,7 +1,7 @@
-<h3> Список кураторов: </h3>
+<h1><b> <p align="center">Список кураторов:</p> </b></h1>
 
 <% @curators.each do |curator| %>
-	<p>
-		<%= curator.name %>
-	</p>
+	<h2><p>
+		<b><%= curator.id %></b>. <%= curator.name %>
+	</p></h2>
 <% end %>
