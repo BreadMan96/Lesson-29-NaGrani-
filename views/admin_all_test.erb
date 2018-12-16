@@ -1,53 +1,55 @@
-<style>
-  #block1 {
-	float: left;
-	display: block;
-	width: 300px;
-	border: 1px;
-	margin: 2px;
-	}
+<h1><b> <p align="center">Список кураторов:</p> </b></h1>
 
-  #block2 {
-	float: left;
-	display: block;
-	width: 300px;
-	border: 1px;
-	margin: 2px;
-	}
-</style>
+<% @curators.each do |curator| %>
+	<h2><p>
+		<ul class="list-group">
+		  <li class="list-group-item"><b><%= curator.id %></b>. <%= curator.name %></li>
+		</ul>
+	</p></h2>
+<% end %>
 
-
-<div class="card" style="float: left; display: block; width: 18rem;">
-  <img class="card-img-top" src="https://i.ibb.co/vmDSK0C/1537385159-darya-rudenok-poster.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 align="center" class="card-title"><b>Дарья Руденок</b></h5>
-    <h6 align="center" class="card-subtitle mb-2 text-muted">Зомби-апокалипсис</h6>
-    <p align="center" class="card-text"></p>
-    <p align="center"> <a href="https://www.instagram.com/dasharudenok/" class="btn btn-primary">Instagram</a></p>
-  </div>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small><span class="badge badge-secondary">New</span></small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small>Donec id elit non mi porta.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
 </div>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
-	
-<div class="card" style="width: 18rem;">
-	  <img class="card-img-top" src="https://i.ibb.co/590V3h3/1426680765-elizaveta-kononova-foto-2.jpg" alt="Card image cap">
-	  <div class="card-body">
-	    <h5 align="center" class="card-title"><b>Елизавета Кононова</b></h5>
-	    <h6 align="center" class="card-subtitle mb-2 text-muted">Голливудская звезда</h6>
-	    <p align="center" class="card-text"></p>
-	    <p align="center"> <a href="https://www.instagram.com/kononovael" class="btn btn-primary">Instagram</a></p>
-	  </div>
-</div>
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Сообщения
+    <span class="badge badge-primary badge-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Уведомления
+    <span class="badge badge-primary badge-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Друзья
+    <span class="badge badge-primary badge-pill">1</span>
+  </li>
+</ul>
 
 <div class="card" style="width: 18rem;">
   <div class="card-body">

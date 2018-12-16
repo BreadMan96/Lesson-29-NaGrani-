@@ -74,3 +74,19 @@ end
 get '/admin_all_test' do
 	erb :admin_all_test	
 end
+
+get '/admin' do
+	erb :admin
+end
+
+post '/admin' do
+	@login = params[:admin_login]
+	@password = params[:admin_password]
+
+	if @login == "BreadMan" && @password == "bread17"
+		erb :admin_show
+	else 
+		@error = "Не верный логин/пароль. Попробуйте ещё раз!"
+		erb :admin
+	end
+end
